@@ -36,3 +36,6 @@ logs
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Mac OS 默认文件.DS_Store ###
+.DS_Store
