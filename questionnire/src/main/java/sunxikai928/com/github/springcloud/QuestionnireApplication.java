@@ -7,7 +7,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("sunxikai928.com.github.springcloud.**.dao")//将项目中对应的mapper类的路径加进来就可以了
+//将项目中对应的mapper类的路径加进来就可以了
+@MapperScan("sunxikai928.com.github.springcloud.**.dao")
 public class QuestionnireApplication {
 
 	public static void main(String[] args) {
