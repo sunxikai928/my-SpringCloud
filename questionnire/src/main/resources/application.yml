@@ -1,26 +1,28 @@
-server:
-  port: 8763
+#server:
+#  port: ${profile.server.port}
 
 spring:
+  profiles:
+    active: dev
   application:
     name: questionnire
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:oracle:thin:@//120.52.79.47:80/orcl
-    username: visitdatadev
-    password: dev123456
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    max-idle: 10
-    max-wait: 10000
-    min-idle: 5
-    initial-size: 5
+#    url: ${profile.spring.datasource.url}
+#    username: ${profile.spring.datasource.username}
+#    password: ${profile.spring.datasource.password}
+#    driver-class-name: ${profile.spring.datasource.driver-class-name}
+#    validationQuery: ${profile.spring.datasource.validationQuery}
+#    testWhileIdle: ${profile.spring.datasource.testWhileIdle}
+#    max-idle: ${profile.spring.datasource.max-idle}
+#    max-wait: ${profile.spring.datasource.max-wait}
+#    min-idle: ${profile.spring.datasource.min-idle}
+#    initial-size: ${profile.spring.datasource.initial-size}
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${profile.eureka.client.serviceUrl.defaultZone}
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
