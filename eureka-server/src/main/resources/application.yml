@@ -14,5 +14,7 @@ eureka:
 
 # spring 配置
 spring:
+  profiles:
+    active: dev
   application:
     name: eurka-server # 服务名称
