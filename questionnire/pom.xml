@@ -3,34 +3,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>questionnire</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <name>questionnire</name>
-    <description>Demo project for Spring Boot</description>
-
     <parent>
         <groupId>sunxikai928.com.github.springcloud</groupId>
         <artifactId>my-cloud</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <artifactId>questionnire</artifactId>
+    <packaging>jar</packaging>
+    <name>questionnire</name>
+
     <dependencies>
+        <!-- eureka-client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
+        <!-- eureka-client end-->
+        <!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- web end -->
 
+        <!-- mybatis -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+        <!-- mybatis end -->
+
         <!--数据库-->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -46,11 +49,12 @@
         </dependency>
         <!--数据库 END-->
 
-        <!--yml配置生效需要这个包-->
+        <!-- yml配置 -->
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
         </dependency>
+        <!-- yml配置 end -->
 
         <!-- Utils START -->
         <dependency>
@@ -72,11 +76,28 @@
         <!--Utils END-->
     </dependencies>
 
+    <!--
+    指定具体的main类
+    如果是直接继承自 spring-boot-starter-parent 的模块,可以直接指定启动类如下:
+    <properties>
+       <start-class>com.xx.xx</start-class>
+    </properties>
+    -->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>sunxikai928.com.github.springcloud.QuestionnireApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

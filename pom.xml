@@ -146,13 +146,23 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <!--
+    帮助打包可执行的jar包,如果在pom文件中指定就会默认所有jar包都要打包.
+    并且他会找每个jar中的main()主类,如果没有会打包失败.
+    可以直接在模块中引入插件,并指定具体的main方法的类
+    具体配置看具体模块中的配置,
+    如果是直接继承自 spring-boot-starter-parent 的模块,可以直接指定启动类如下:
+    <properties>
+       <start-class>com.xx.xx</start-class>
+    </properties>
+        -->
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 
 </project>
