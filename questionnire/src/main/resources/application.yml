@@ -1,29 +1,33 @@
-#server:
-#  port: ${profile.server.port}
+# 服务器配置
+server:
+  port: ${profile.server.port}
 
+# spring 配置
 spring:
   profiles:
-    active: dev
-  application:
+    active: dev   # 默认环境 开发环境
+  application:   # 服务名称
     name: questionnire
-  datasource:
+  datasource: # 数据源配置
     type: com.alibaba.druid.pool.DruidDataSource
-#    url: ${profile.spring.datasource.url}
-#    username: ${profile.spring.datasource.username}
-#    password: ${profile.spring.datasource.password}
-#    driver-class-name: ${profile.spring.datasource.driver-class-name}
-#    validationQuery: ${profile.spring.datasource.validationQuery}
-#    testWhileIdle: ${profile.spring.datasource.testWhileIdle}
-#    max-idle: ${profile.spring.datasource.max-idle}
-#    max-wait: ${profile.spring.datasource.max-wait}
-#    min-idle: ${profile.spring.datasource.min-idle}
-#    initial-size: ${profile.spring.datasource.initial-size}
+    url: ${profile.spring.datasource.url}
+    username: ${profile.spring.datasource.username}
+    password: ${profile.spring.datasource.password}
+    driver-class-name: ${profile.spring.datasource.driver-class-name}
+    validationQuery: ${profile.spring.datasource.validationQuery}
+    testWhileIdle: ${profile.spring.datasource.testWhileIdle}
+    max-idle: ${profile.spring.datasource.max-idle}
+    max-wait: ${profile.spring.datasource.max-wait}
+    min-idle: ${profile.spring.datasource.min-idle}
+    initial-size: ${profile.spring.datasource.initial-size}
 
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: ${profile.eureka.client.serviceUrl.defaultZone}
+# 注册中心配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${profile.eureka.client.serviceUrl.defaultZone}
 
+# mybatis 配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
   type-aliases-package: sunxikai928.com.github.springcloud.model # 注意：对应实体类的路径

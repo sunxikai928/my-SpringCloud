@@ -20,6 +20,7 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <!-- eureka-client end-->
+
         <!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

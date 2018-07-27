@@ -155,6 +155,10 @@
     <properties>
        <start-class>com.xx.xx</start-class>
     </properties>
+    打包命令:
+    mvn clean package -Dmaven.test.skip=true
+
+    -Dmaven.test.skip=true : 不打包不检查 test
         -->
     <!--<build>-->
         <!--<plugins>-->
