@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
 
     <name>my-cloud</name>
-    <description>my-cloud</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
