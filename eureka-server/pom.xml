@@ -30,20 +30,13 @@
 
     </dependencies>
 
-    <!--
-    指定具体的main类
-    如果是直接继承自 spring-boot-starter-parent 的模块,可以直接指定启动类如下:
-    <properties>
-       <start-class>com.xx.xx</start-class>
-    </properties>
-    -->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>sunxikai928.com.github.springcloud.QuestionnireApplication</mainClass>
+                    <mainClass>sunxikai928.com.github.springcloud.EurekaServerApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

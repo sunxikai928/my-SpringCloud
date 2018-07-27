@@ -57,7 +57,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>sunxikai928.com.github.springcloud.QuestionnireApplication</mainClass>
+                    <mainClass>sunxikai928.com.github.springcloud.GatewayApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
