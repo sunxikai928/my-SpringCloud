@@ -22,4 +22,7 @@ java -jar ***.jar
 如果需要指定环境可以加参数 `` --spring.profiles.active=test ``
 
 ### 环境 #
-application.yml 是默认文件必须要有.如果需要多环境可以新建 application-环境名称.yml 的文件.例如 application-dev.yml / application-test.yml.dev环境启动 `` --spring.profiles.active=dev `` 就可以了. 
+application.yml 是默认文件必须要有.
+如果需要多环境可以新建 application-环境名称.yml 的文件.
+例如 application-dev.yml / application-test.yml.
+dev环境启动 `` --spring.profiles.active=dev `` 就可以了.
