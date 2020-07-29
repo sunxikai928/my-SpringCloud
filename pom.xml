@@ -20,7 +20,6 @@
     <modules>
         <module>core</module>
         <module>eureka-server</module>
-        <module>questionnire</module>
         <module>gateway</module>
     </modules>
 
