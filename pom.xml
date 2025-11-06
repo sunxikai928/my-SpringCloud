@@ -41,7 +41,7 @@
         <pagehelper.version>5.1.2</pagehelper.version>
         <pagehelper-spring-boot-starter.version>1.2.5</pagehelper-spring-boot-starter.version>
         <spring-cloud-starter-netfli-zuul.version>2.0.0.RELEASE</spring-cloud-starter-netfli-zuul.version>
-        <postgresql.version>9.4.1212</postgresql.version>
+        <postgresql.version>42.3.9</postgresql.version>
     </properties>
 
     <dependencies>
