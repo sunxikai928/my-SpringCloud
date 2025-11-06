@@ -38,7 +38,7 @@
         <httpclient.version>4.5.13</httpclient.version>
         <druid.version>1.0.17</druid.version>
         <oracle.version>11.2.0.1.0</oracle.version>
-        <pagehelper.version>5.1.2</pagehelper.version>
+        <pagehelper.version>5.3.1</pagehelper.version>
         <pagehelper-spring-boot-starter.version>1.2.5</pagehelper-spring-boot-starter.version>
         <spring-cloud-starter-netfli-zuul.version>2.0.0.RELEASE</spring-cloud-starter-netfli-zuul.version>
         <postgresql.version>9.4.1212</postgresql.version>
